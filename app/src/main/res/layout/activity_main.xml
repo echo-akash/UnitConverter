@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Converter" />
+
+    <EditText
+        android:id="@+id/inputval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cm2m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm to meter" />
+
+        <CheckBox
+            android:id="@+id/m2cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="meter to cm" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/c2f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="celsius to fahrenheit"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/f2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fahrenheit to celsius"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/f2i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="foot to inch"/>
+        <CheckBox
+            android:id="@+id/i2f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="inch to foot"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
